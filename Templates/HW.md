@@ -1,10 +1,11 @@
 <%*
 let title = tp.file.title;
 let tags;
+const fileName = tp.file.folder();
 if (true) {
-	title = tp.file.folder();
-    tags = title.replaceAll(" ", "_");
-    tp.file.rename("HW for " + title);
+	title = "HW"
+    tags = fileName.replaceAll(" ", "_");
+    tp.file.rename("HW for " + fileName);
 }
 
 

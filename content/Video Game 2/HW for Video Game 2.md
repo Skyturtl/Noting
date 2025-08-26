@@ -1,5 +1,5 @@
 ---
-title: Video Game 2
+title: HW
 created: 26th August 2025
 last modified: 26th August 2025
 Tags: [Video_Game_2, HW]
