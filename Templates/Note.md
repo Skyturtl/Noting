@@ -1,18 +1,18 @@
 <%*
 let title = tp.file.title;
 let tags;
-if (title.startsWith("Untitled")) {
+let today = tp.date.now("MM-DD-YYYY")
+if (true) {
 	title = tp.file.folder()
-    tags = title
-    tp.file.rename(title + " " + tp.date.now("Do MMMM YYYY"));
+    tags = title.replaceAll(" ", "_");
+    tp.file.rename(today);
 }
 
-
 tR += `---
-title: ${title}
+title: ${today}
 created: ${tp.file.creation_date("Do MMMM YYYY")}
 last modified: ${tp.file.last_modified_date("Do MMMM YYYY")}
-Tags: [${tags}, HW]
+Tags: [${tags}]
 ---
 `;
 %>
